@@ -1,0 +1,35 @@
+
+body {
+ background-color: black    ;
+ color: white;
+
+
+}
+.info  {
+ text-align: center;
+ font-family: 'Courier New', Courier, monospace;
+ padding-top: 5px;
+
+}
+.info a{
+  text-decoration: none;
+
+}
+.content-div{
+  padding:30px 0px 0px 50px;
+  padding-left:50px;
+  max-width: 500px;
+  width: 90%;
+  word-break:break-all;
+}
+ a{
+  color:rgb(0, 217, 255)
+   
+}
+.content a {
+color:white
+}
+.content {
+  font-size:15px;
+  word-break:break-all;
+}

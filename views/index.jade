@@ -1,0 +1,24 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Blog Sayfam
+  link(rel='stylesheet' href='/stylesheets/style.css')
+
+.info
+
+  h1 Furkan YEŞİLBAĞ
+  h4  Blog sayfama hoşgeldiniz 
+  a(href ="https://www.facebook.com/profile.php?id=100014026901969"  target='_blank') Facebook  |
+
+  a(href ="https://www.instagram.com/furkan_yslbgs/?hl=tr"  target='_blank')  İnstagram
+
+
+- for(var i = 0; i<posts.length;i++){
+    .content-div
+  h2
+    a(href='/'+ '#{posts[i].postId}')  #{posts[i].title}  
+  .content 
+  p   #{posts[i].content}
+  -}

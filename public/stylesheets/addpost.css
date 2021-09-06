@@ -1,0 +1,15 @@
+body {
+    max-width: 500;
+    width: 100%;
+
+  display: flex;
+    
+}
+
+ul li {
+    text-decoration: none;
+    list-style-type: none;
+    padding:10px 0 5px 0;
+    justify-content:center ;
+
+}

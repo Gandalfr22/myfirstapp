@@ -1,0 +1,24 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Document
+ link(rel='stylesheet', href='/stylesheets/addpost.css')
+
+div
+  .hheader
+    h1 Post Ekle
+  form(action='/blog/save-post' method='POST')
+    .form
+      ul
+        li
+          | Başlık: 
+          input.header(type='text' name='title')
+        li
+          | Metin: 
+          input.content(type='text' name='content')
+        li
+          button.butt Yayınla
+
+          #{stat}
