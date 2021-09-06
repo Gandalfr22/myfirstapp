@@ -13,11 +13,11 @@ async function run() {
     // Connect the client to the server
   await   mongoose.connect(uri).then(async() => {
     
-        await console.log("Connected successfully to server");
+
      
       
     }).catch((err) => {
-      console("MongoDB Connection Failed: "+err)
+
     }) 
     
     // Establish and verify connection
@@ -27,7 +27,7 @@ async function run() {
     
   
   }
-  run().catch(console.dir);
+  run()
 }
 
 
