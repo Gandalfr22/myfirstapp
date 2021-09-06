@@ -8,9 +8,7 @@ const indexRouter = require('./routes/index');
 const blogRouter = require('./routes/users');
 const postRouter = require('./routes/postId');
 
-
 const app = express();
-//db connection
   
 const dbConnection = require('./helpers/connect.js') ();
 
