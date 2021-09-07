@@ -14,11 +14,13 @@ function slugify(string) {
     .replace(/-+$/, "");
 }
 
-
+// GÖNDERİ EKLEME EKRANINA GEL
 router.get('/new-post', function(req, res, next) {
   res.render('addpost');
 });
 
+
+// FORMDAN GELEN VERİLERİ KAYDET
 router.post('/save-post', function(req, res, next) {
   
   const {title, content} = req.body
@@ -30,17 +32,14 @@ router.post('/save-post', function(req, res, next) {
  });
 
  infos.save((err,data) => {
-  
-    res.render('addpost');
+  if (err){
+    res.json(err);
+  }
+  else {
+    res.json(data); }
  });
     });
 
-router.get('/posts', function(req, res, next) {
- const findPosts = postInfo.find({});
- findPosts.then((data)=>{
- res.json(data);
- });
-});
 
 
 module.exports = router;

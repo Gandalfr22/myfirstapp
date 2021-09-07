@@ -1,23 +1,28 @@
-doctype html
 head
   meta(charset='UTF-8')
   meta(http-equiv='X-UA-Compatible' content='IE=edge')
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
   title Blog Sayfam
+ 
   link(rel='stylesheet' href='/stylesheets/style.css')
+  link(rel='stylesheet' href='/stylesheets/bootstrap.css')
+script(src='/javascripts/bootstrap.bundle.js')
 
-.info
-  h1 Furkan YEŞİLBAĞ
-  h4  Blog sayfama hoşgeldiniz 
-  a(href ="https://www.facebook.com/profile.php?id=100014026901969"  target='_blank') Facebook  |
 
-  a(href ="https://www.instagram.com/furkan_yslbgs/?hl=tr"  target='_blank')  İnstagram
+div
+  nav.navbar.navbar-dark.bg-dark.container-fluid
+      a.navbar-brand(href='/home') Furkan Yeşilbağ
+      a.navbar-brand(aria-current='page' href='/blog/save-post') Giriş Yap
+      a.navbar-brand(aria-current='page' href='/blog/new-post') Gönderi ekle
+      form.d-flex
+        input.form-control.me-2(type='search' placeholder='Gönderi Ara' aria-label='Search')
+        button.btn.btn-outline-light(type='submit') Search
 
 
 - for(var i = 0; i<posts.length;i++){
-    .content-div
-  h2
-    a(href='/'+ '#{posts[i].postId}')  #{posts[i].title}  
-  .content 
-  p   #{posts[i].content}
-  -}
+
+  .card(style='width: 60%; max-width:60rem').card-body
+      h5.card-title #{posts[i].title}
+      p.card-text #{posts[i].content}
+      a.btn.btn-primary(href='/blog/post/' + '#{posts[i].postId}') Gönderiyi Gör
+      -}

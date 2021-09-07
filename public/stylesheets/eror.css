@@ -1,0 +1,44 @@
+body {
+    margin:0;
+    padding:0;  
+    background-color: black;
+    color: white;
+} 
+.box {
+position: absolute;
+top:25%;
+    height: 300px;
+    width: 100%;
+    background-color: blueviolet;
+    text-align: center;
+    padding: 0px;
+}
+.box h1 {
+    font-size: 100px;
+}
+.box button {
+    color:white;
+    border:none;
+    background: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: black;
+    
+}
+.box button:hover {
+    cursor:pointer;
+    margin-top:2px;
+    margin-left:2px;
+}
+
+.inner-box {
+    margin-top: -50px
+}
+.inner-box p{
+    margin-top:-40px;
+    margin-bottom:30px;
+}
+.box button:active {
+    margin-top:4px;
+}

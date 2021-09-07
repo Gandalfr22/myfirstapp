@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 
 
 const indexRouter = require('./routes/index');
-const blogRouter = require('./routes/users');
+const blogRouter = require('./routes/blog');
 const postRouter = require('./routes/postId');
 
 const app = express();
@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/blog', blogRouter);
-app.use('/',postRouter);
+app.use('/blog/post',postRouter);
 
 
 

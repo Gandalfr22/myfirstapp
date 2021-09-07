@@ -8,12 +8,14 @@ var post = [];
 
 router.get('/:postIds', function(req, res, next) {
     searchForPost = req.params.postIds
-
     const findPost = postInfo.findOne({postId: searchForPost})
     .then((data)=>{   
       post = data
-      res.render('detailPost',{data: post});
- 
+      if(post != undefined) {
+      res.render('detailPost',{data: post}); 
+} else {
+      res.render('error',{data: post}); 
+}
 });
       });
 

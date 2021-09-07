@@ -1,24 +1,28 @@
-doctype html
 head
   meta(charset='UTF-8')
   meta(http-equiv='X-UA-Compatible' content='IE=edge')
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  title Document
-  link(rel='stylesheet', href='/stylesheets/addpost.css')
+  title Blog Sayfam
+ 
+  link(rel='stylesheet' href='/stylesheets/addpost.css')
+  link(rel='stylesheet' href='/stylesheets/bootstrap.css')
+script(src='/javascripts/bootstrap.bundle.js')
+
 
 div
-  .header
-    h1 Post Ekle
-  form(action='/blog/save-post' method='POST')
-    .form
-      ul
-        li
-          | Başlık: 
-          input.header(type='text' name='title')
-        li
-          | Metin: 
-          input.content(type='text' name='content')
-        li
-          button.butt Yayınla
-
-          #{stat}
+  nav.navbar.navbar-dark.bg-dark.container-fluid
+      a.navbar-brand(href='/home') Furkan Yeşilbağ
+      a.navbar-brand(aria-current='page' href='/blog/save-post') Giriş Yap
+ 
+      form.d-flex.search
+        input.form-control.me-2(type='search' placeholder='Gönderi Ara' aria-label='Search')
+        button.btn.btn-outline-light.hidden(type='submit') Search
+  div
+    h1.display-3 Gönderi Ekle
+  .box
+    form(action='/blog/save-post' method='POST').content
+      | Başlık: 
+      input.form-control(type='text' name='title')
+      |             Metin:  
+      textarea#exampleFormControlTextarea1.form-control(rows='10', name ="content")
+      button.btn.btn-secondary Yayınla
