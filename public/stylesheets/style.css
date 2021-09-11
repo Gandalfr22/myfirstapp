@@ -1,20 +1,17 @@
 
-.card {
-  
-    transform: translate(-50%);
-    left:50%;
-    margin-top:20px;
-  
-
-}
-nav a {
-
-    margin-left:40px
-
-}
-
 form {
-    position: relative;
-    transform: translate(0,21%);
-
+    
+    transform:translate(-10%,20%)
+}
+.p {
+    color:White;
+    text-decoration: none;
+}
+.p:hover {
+    color:White;
+    text-decoration: none;
+}
+.card{
+    margin:20px 0 20px 20px;
+    transform: translateX(35%);
 }

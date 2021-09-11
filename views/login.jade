@@ -1,0 +1,26 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Document
+  link(rel='stylesheet' href='/stylesheets/login.css')
+  link(rel='stylesheet' href='/stylesheets/bootstrap.css')
+
+div
+  nav.navbar.navbar-dark.bg-dark.container-fluid
+      a.navbar-brand(href='/home').ms-4 Furkan Yeşilbağ
+
+form(action='/login-check' method='get')
+   .box
+    h1.display-6 Giriş Yap
+    div
+      input.form-control(type='text' placeholder='Name')
+      input.form-control(type='pasword' placeholder='Password')
+      .button-box
+        button.btn.btn-primary(type='submit') Sign in
+        br
+        span
+          | Have not a account? 
+          a(href='/users/sign-up') Sign Up!
+

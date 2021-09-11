@@ -36,7 +36,7 @@ router.post('/save-post', function(req, res, next) {
     res.json(err);
   }
   else {
-    res.json(data); }
+    return res.redirect('/home')}
  });
     });
 

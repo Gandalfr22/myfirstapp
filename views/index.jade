@@ -6,17 +6,21 @@ head
  
   link(rel='stylesheet' href='/stylesheets/style.css')
   link(rel='stylesheet' href='/stylesheets/bootstrap.css')
-script(src='/javascripts/bootstrap.bundle.js')
+  
+  script(src='/javascripts/bootstrap.bundle.js')
+
+
 
 
 div
   nav.navbar.navbar-dark.bg-dark.container-fluid
-      a.navbar-brand(href='/home') Furkan Yeşilbağ
-      a.navbar-brand(aria-current='page' href='/blog/save-post') Giriş Yap
-      a.navbar-brand(aria-current='page' href='/blog/new-post') Gönderi ekle
-      form.d-flex
+      a.navbar-brand(href='/home').ms-4 Furkan Yeşilbağ
+      form.d-flex.col-md-7
         input.form-control.me-2(type='search' placeholder='Gönderi Ara' aria-label='Search')
         button.btn.btn-outline-light(type='submit') Search
+ 
+        a.p(aria-current='page' href='/users/login').ms-7.mt-2 Giriş Yap |
+        a.p(aria-current='page' href='/blog/new-post').ms-2.mt-2 | Kayıt Ol
 
 
 - for(var i = 0; i<posts.length;i++){
@@ -26,3 +30,4 @@ div
       p.card-text #{posts[i].content}
       a.btn.btn-primary(href='/blog/post/' + '#{posts[i].postId}') Gönderiyi Gör
       -}
+

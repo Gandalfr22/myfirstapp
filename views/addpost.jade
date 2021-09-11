@@ -11,12 +11,18 @@ script(src='/javascripts/bootstrap.bundle.js')
 
 div
   nav.navbar.navbar-dark.bg-dark.container-fluid
-      a.navbar-brand(href='/home') Furkan Yeşilbağ
-      a.navbar-brand(aria-current='page' href='/blog/save-post') Giriş Yap
- 
-      form.d-flex.search
+      a.navbar-brand(href='/home').ms-4 Furkan Yeşilbağ
+      form.d-flex.col-md-7
         input.form-control.me-2(type='search' placeholder='Gönderi Ara' aria-label='Search')
-        button.btn.btn-outline-light.hidden(type='submit') Search
+        button.btn.btn-outline-light(type='submit') Search
+ 
+        a.p(aria-current='page' href='/users/login').ms-7.mt-2 Giriş Yap |
+        a.p(aria-current='page' href='/users/signin').ms-2.mt-2 | Kayıt Ol
+
+
+
+
+
   div
     h1.display-3 Gönderi Ekle
   .box

@@ -478,8 +478,10 @@ progress {
 }
 
 .lead {
+  max-width: 1000px;
   font-size: 1.25rem;
   font-weight: 300;
+  margin:50px 0 0 30px;
 }
 
 .display-1 {
@@ -7347,6 +7349,12 @@ textarea.form-control-lg {
 
 .ms-5 {
   margin-left: 3rem !important;
+}
+.ms-6 {
+  margin-left: 24rem !important;
+}
+.ms-7 {
+  margin-left: 16rem !important;
 }
 
 .ms-auto {

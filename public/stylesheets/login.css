@@ -1,0 +1,42 @@
+
+form {
+    margin:0px;
+    padding: 0px;
+    transform: translate(40%,20%); 
+
+}
+nav {
+    height: 70px;
+}
+.box {
+    background-color: white;
+    width: 400px;
+    max-width: 90%;
+    height: 500px;
+    border: 1px rgb(209, 200, 200) solid;
+    text-align: center;
+    padding-top:40px;
+ 
+}
+
+.box input{
+    transform: translate(50%,120%);
+    margin-bottom:20px;
+
+   }
+.button-box  {
+ transform: translateY(140%);
+
+
+}
+.button-box span 
+{
+    display:block;
+font-size:12px;
+
+}
+
+span  {
+margin-top:30px;
+    
+}

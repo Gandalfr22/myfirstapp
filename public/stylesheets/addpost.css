@@ -6,13 +6,20 @@ body {
 .display-3 {
   padding-top:30px
 }
-nav a {
-  margin-left:40px
-}
 
-.search{
-  transform: translate(0,21%);
-}
 .content {
   transform:translate(25%);
+}
+
+form {
+    
+  transform:translate(-10%,20%)
+}
+.p {
+  color:White;
+  text-decoration: none;
+}
+.p:hover {
+  color:White;
+  text-decoration: none;
 }

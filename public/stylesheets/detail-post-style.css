@@ -1,8 +1,29 @@
 body{
     padding: 0px;
 }
-nav a {
 
-    margin-left:40px
 
+.box  {
+transform: translate(40%,10%);
+width: 1000px;
+height: 500px;
+max-width: 70%;
+}
+.box h1 {
+    margin-left:15px;
+    padding-bottom:15px;
+    border-bottom: 1px black solid
+}
+
+form {
+    
+    transform:translate(-10%,20%)
+}
+.p {
+    color:White;
+    text-decoration: none;
+}
+.p:hover {
+    color:White;
+    text-decoration: none;
 }
